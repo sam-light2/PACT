@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0e08">
+<title>PACT — Quit vaping with someone.</title>
+<meta name="description" content="Quitting alone doesn't work. Pact pairs you with one person. Hit SOS when the craving spikes. Ninety seconds and it passes.">
+<meta property="og:title" content="PACT — Quit vaping with someone.">
+<meta property="og:description" content="The anti-Big Vape app. Pair up. Streak together. Hit SOS when the craving spikes.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="#" class="logo" aria-label="Pact home">PACT</a>
+    <a href="#waitlist" class="nav-cta">Join the waitlist</a>
+  </div>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot"></span><strong>maya</strong> · day 47</span>
+    <span class="ticker-item"><span class="dot"></span><strong>$1,290</strong> saved this week</span>
+    <span class="ticker-item"><span class="dot"></span><strong>jordan + sam</strong> · day 173</span>
+    <span class="ticker-item"><span class="dot"></span><strong>3,294</strong> people in their pact</span>
+    <span class="ticker-item"><span class="dot"></span><strong>marcus</strong> · day 12</span>
+    <span class="ticker-item"><span class="dot"></span><strong>sos hits today</strong> · 1,847</span>
+    <span class="ticker-item"><span class="dot"></span><strong>el + nora</strong> · day 309</span>
+    <span class="ticker-item"><span class="dot"></span><strong>$847,210</strong> saved by pact users</span>
+    <span class="ticker-item"><span class="dot"></span><strong>maya</strong> · day 47</span>
+    <span class="ticker-item"><span class="dot"></span><strong>$1,290</strong> saved this week</span>
+    <span class="ticker-item"><span class="dot"></span><strong>jordan + sam</strong> · day 173</span>
+    <span class="ticker-item"><span class="dot"></span><strong>3,294</strong> people in their pact</span>
+    <span class="ticker-item"><span class="dot"></span><strong>marcus</strong> · day 12</span>
+    <span class="ticker-item"><span class="dot"></span><strong>sos hits today</strong> · 1,847</span>
+    <span class="ticker-item"><span class="dot"></span><strong>el + nora</strong> · day 309</span>
+    <span class="ticker-item"><span class="dot"></span><strong>$847,210</strong> saved by pact users</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-eyebrow">
+      <span class="badge-dot"></span>
+      Built by people who quit. Not a wellness app.
+    </span>
+
+    <h1 class="hero-headline">
+      <span class="hl-line"><span class="hl-inner">Quitting alone</span></span>
+      <span class="hl-line"><span class="hl-inner">doesn't <span class="acid">work.</span></span></span>
+    </h1>
+
+    <p class="hero-sub">
+      Hit SOS when the craving spikes. Ninety seconds of breath, your reasons, your buddy.
+      Most cravings don't last longer.
+    </p>
+
+    <form class="hero-form" onsubmit="return handleSubmit(event)">
+      <input
+        type="email"
+        class="hero-input"
+        placeholder="your@email.com"
+        aria-label="Email address"
+        required
+      >
+      <button type="submit" class="btn-primary">
+        Join the waitlist
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+
+    <p class="hero-trust">
+      <strong>3,294</strong> already paired up. Be the next one.
+    </p>
+  </div>
+</section>
+
+<!-- BIG VAPE STRIP -->
+<section class="bigvape">
+  <div class="wrap">
+    <div class="bigvape-tag">The honest part</div>
+
+    <h2 class="bigvape-statement reveal">
+      Big Vape engineered the flavors. <em>We engineered the exit.</em>
+    </h2>
+
+    <div class="stats-row">
+      <div class="stat reveal">
+        <div class="stat-number" data-count="29">0</div>
+        <p class="stat-label">of teen vapers now use it every single day. That number was 15% in 2020.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="53">0</div>
+        <p class="stat-label">of daily vapers have tried to quit and failed. The product was designed that way.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-number" data-count="2">0</div>
+        <p class="stat-label">of young adults who quit used an FDA-approved aid. The rest needed something else.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES BENTO -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-eyebrow">Three things, no fluff</div>
+    <h2 class="section-title reveal">
+      The hooks that make this <span class="acid">stick.</span>
+    </h2>
+
+    <div class="bento">
+
+      <article class="card card-sos reveal">
+        <div>
+          <div class="card-number">01 / SOS</div>
+          <h3 class="card-title">Craving SOS</h3>
+          <p class="card-tagline">The 90-second craving killer.</p>
+        </div>
+
+        <div class="sos-stage">
+          <button class="sos-button" type="button" aria-label="Trigger SOS demo">SOS</button>
+        </div>
+
+        <div>
+          <p class="card-body">
+            Tap the button. Get a guided breath, a swipe deck of your own reasons in your own
+            words, and a one-tap ping to your buddy. Most cravings die in three minutes. We
+            bridge those minutes better than anything else.
+          </p>
+          <div class="sos-meta">
+            <div class="sos-meta-block">
+              <span>Average duration</span>
+              <strong>90s</strong>
+            </div>
+            <div class="sos-meta-block">
+              <span>SOS hits today</span>
+              <strong>1,847</strong>
+            </div>
+            <div class="sos-meta-block">
+              <span>Success rate</span>
+              <strong>87%</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card-pact reveal">
+        <div>
+          <div class="card-number">02 / PAIR</div>
+          <h3 class="card-title">The Pact</h3>
+          <p class="card-tagline">Paired streaks. Relapse hurts your friend, not just you.</p>
+        </div>
+
+        <div class="pact-visual">
+          <div class="pact-side">
+            <div class="pact-avatar you">Y</div>
+            <span class="pact-name">YOU</span>
+            <span class="pact-streak" data-streak="47">0</span>
+            <span class="pact-streak-label">DAYS</span>
+          </div>
+          <div class="pact-bond" aria-hidden="true"></div>
+          <div class="pact-side">
+            <div class="pact-avatar them">M</div>
+            <span class="pact-name">MAYA</span>
+            <span class="pact-streak" data-streak="47">0</span>
+            <span class="pact-streak-label">DAYS</span>
+          </div>
+        </div>
+
+        <p class="card-body">
+          You pair with one person. Both streaks live on the same screen. They see when you hit
+          SOS. You see when they almost slip. Letting yourself down is easy. Letting them down
+          is the work.
+        </p>
+      </article>
+
+      <article class="card card-card reveal">
+        <div>
+          <div class="card-number">03 / REWARD</div>
+          <h3 class="card-title">The Quit Card</h3>
+          <p class="card-tagline">Real money, real reward, real-time.</p>
+        </div>
+
+        <div class="quitcard-display">
+          <div class="quitcard-header">
+            <span>SAVED SO FAR</span>
+            <span>DAY 47 / 90</span>
+          </div>
+          <div class="quitcard-amount"><span class="currency">$</span><span data-money="376">0</span></div>
+          <div class="quitcard-goal">Goal: <strong>Coachella weekend pass</strong></div>
+          <div class="progress-shell">
+            <div class="progress-fill" data-progress="63"></div>
+          </div>
+          <div class="progress-meta">
+            <span>$376 OF $599</span>
+            <span>63%</span>
+          </div>
+        </div>
+
+        <p class="card-body">
+          Every clean day, the money piles up. Map it to something concrete: festival tickets, a
+          flight, the headphones you've been eyeing. Post the card when you want everyone to know.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="wrap">
+    <div class="section-eyebrow">How it works</div>
+    <h2 class="section-title reveal">
+      Three steps. Then you <span class="acid">show up.</span>
+    </h2>
+
+    <div class="how-grid">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Pair up</h3>
+        <p class="step-body">Invite a friend who also wants out, or get auto-matched at your exact level.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Set your why</h3>
+        <p class="step-body">The money. The milestone. The person you're doing this for. Your reasons, your handwriting.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Show up</h3>
+        <p class="step-body">Daily check-ins. SOS when you need it. Streaks you build together. Repeat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="wrap">
+    <p class="manifesto-text reveal">
+      You were fifteen. <span class="acid">They knew exactly what they were doing.</span>
+    </p>
+    <p class="manifesto-attribution">Built in Austin, by people who quit</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" id="waitlist">
+  <div class="wrap">
+    <h2 class="cta-headline reveal">
+      Be first <span class="acid">in line.</span>
+    </h2>
+    <p class="cta-sub reveal">
+      We'll text you when we launch. No spam, no quit shaming, no wellness garbage.
+    </p>
+
+    <form class="cta-form" onsubmit="return handleSubmit(event)">
+      <input
+        type="email"
+        class="hero-input"
+        placeholder="your@email.com"
+        aria-label="Email address"
+        required
+      >
+      <button type="submit" class="btn-primary">
+        Reserve my spot
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+
+    <p class="cta-fine">Refer 3 friends, skip the line. Refer 10, get year-one premium free.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-tagline">
+        Quit with <span class="acid">someone.</span>
+      </div>
+      <div class="footer-meta">
+        <a href="mailto:hello@pactapp.co">hello@pactapp.co</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">TikTok</a><br>
+        <a href="#">Reddit</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PACT</span>
+      <span>Privacy · Terms · The deal</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
